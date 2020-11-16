@@ -1,0 +1,177 @@
+#container {
+    background-color: ghostwhite;
+    box-shadow: 7px 5px 5px gray;
+    border-color: black;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 5px;
+    width: 500px;
+    height: 475px;
+}
+
+#puzzle {
+    position: absolute;
+    left: 2.7em;
+    top: 5.80em;
+    font-size: 30pt;
+    font-family: monospace;
+}
+
+#guessed {
+    position: absolute;
+    left: 7em;
+    top: 24em;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+#guesses {
+    position: absolute;
+    left: 7em;
+    top: 22.05em;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+#message {
+    position: absolute;
+    left: 7em;
+    top: 20em;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+#instructions {
+    position: absolute;
+    left: 2.85em;
+    top: .2em;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+#new-game {
+    position: absolute;
+    left: 15em;
+    top: 34em;
+}
+
+#hangmanNoose {
+    font-size: 4em;
+    display: inline-block;
+    width: 0.3em;
+    box-sizing: content-box;
+    height: 0.4em;
+    border: 0.1em solid black;
+    position: absolute;
+    left: 3.57em;
+    top: 1.5em;
+    border-radius: 0.35em;
+  }
+  #hangmanNoose:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0.1em;
+    bottom: 0.4em;
+    border-width: 0;
+    background: black;
+    width: 0.1em;
+    height: 0.7em;
+
+  }
+
+#hangmanHead {
+    position: absolute;
+    left: 13.7em;
+    top: 6em;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+}
+
+#hangmanBody {
+    position: absolute;
+    left: 15em;
+    top: 9em;
+    width: 10px;
+    height: 73px;
+    background: black;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#hangmanLeftArm {
+    position: absolute;
+    left: 14em;
+    top: 9.5em;
+    width: 10px;
+    height: 50px;
+    background: black;
+    transform: rotate(-135deg);
+    border-radius: 5px 5px 0px 0px;
+}
+
+#hangmanRightArm {
+    position: absolute;
+    left: 16em;
+    top: 9.5em;
+    width: 10px;
+    height: 50px;
+    background: black;
+    transform: rotate(135deg);
+    border-radius: 5px 5px 0px 0px;
+}
+
+#hangmanLeftLeg {
+    position: absolute;
+    left: 14.25em;
+    top: 13em;
+    width: 10px;
+    height: 70px;
+    background: black;
+    transform: rotate(20deg);
+    border-radius: 0px 0px 5px 5px;
+}
+
+#hangmanRightLeg {
+    position: absolute;
+    left: 15.75em;
+    top: 13em;
+    width: 10px;
+    height: 70px;
+    background: black;
+    transform: rotate(-20deg);
+    border-radius: 0px 0px 5px 5px;
+}
+
+#gallowsTop {
+    position: absolute;
+    left: 14.5em;
+    top: 3em;
+    width: 150px;
+    height: 10px;
+    background: black;
+    border-radius: 5px 5px 0px 5px;
+}
+
+#gallowsPole {
+    position: absolute;
+    left: 23.4em;
+    top: 3em;
+    width: 10px;
+    height: 275px;
+    background: black;
+    border-radius: 0px 5px 0px 0px;
+}
+
+#gallowsPlatform {
+    position: absolute;
+    left: 5.75em;
+    top: 20em;
+    width: 320px;
+    height: 100px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 5px 5px 5px 5px;
+}

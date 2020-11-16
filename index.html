@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    </head>
+    <body>
+        <div id="container">
+            <p id="instructions">Type a letter on the keyboard to make your guess.</p>
+            <div id="gallowsTop"></div>
+            <div id="gallowsPole"></div>
+            <div id="gallowsPlatform"></div>
+            <div id="hangmanNoose" style="display: none;"></div>
+            <div id="hangmanHead" style="display: none;"></div>
+            <div id="rightEye" style="display: none;"></div>
+            <div id="leftEye" style="display: none;"></div>
+            <div id="mouth" style="display: none;"></div>
+            <div id="hangmanBody" style="display: none;"></div>
+            <div id="hangmanLeftArm" style="display: none;"></div>
+            <div id="hangmanRightArm" style="display: none;"></div>
+            <div id="hangmanLeftLeg" style="display: none;"></div>
+            <div id="hangmanRightLeg" style="display: none;"></div>
+            <p id="puzzle"></p>
+            <p id="guessed"></p>
+            <p id="guesses"></p>
+            <p id="message"></p>
+            <button type="button" id="new-game" onClick="window.location.reload();">New Game</button>
+        </div>
+
+        <script src="hangman.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
