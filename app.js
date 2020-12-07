@@ -12,15 +12,15 @@ const guessAmount = randomWord.length
 const game1 = new Hangman (randomWord, 7)
 
 // initialize text content for DOM elements
-puzzleEl.textContent = game1.getPuzzle()
-guessesEl.textContent = game1.getStatusMessage()
+puzzleEl.textContent = game1.puzzle
+guessesEl.textContent = game1.statusMessage
 guessedEl.textContent = `Guessed Letters: ${game1.guessedLetters.join('')}`
 
-// listen fr guess keypress and render DOM element text content
+// listen for guess keypress and render DOM element text content
 window.addEventListener('keypress', function (e) {
     const guess = String.fromCharCode(e.charCode)
     game1.makeGuess(guess)
-    puzzleEl.textContent = game1.getPuzzle()
-    guessesEl.textContent = game1.getStatusMessage()
+    puzzleEl.textContent = game1.puzzle
+    guessesEl.textContent = game1.statusMessage
     guessedEl.textContent = `Guessed Letters: ${game1.guessedLetters.join('')}`
 })
