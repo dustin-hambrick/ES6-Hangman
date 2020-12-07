@@ -36,7 +36,13 @@ const words = [
     'threat', 'three', 'through', 'throughout', 'throw', 'thus', 'time', 'to', 'today', 'together', 'tonight', 'too', 'top', 'total', 'tough', 'toward', 'town', 'trade', 'traditional', 'training', 'travel', 'treat', 'treatment', 'tree', 'trial', 'trip',
     'trouble', 'TRUE', 'truth', 'try', 'turn', 'TV', 'two', 'type', 'under', 'understand', 'unit', 'until', 'up', 'upon', 'us', 'use', 'usually', 'value', 'various', 'very', 'victim', 'view', 'violence', 'visit', 'voice', 'vote', 'wait', 'walk', 'wall',
     'want', 'war', 'watch', 'water', 'way', 'we', 'weapon', 'wear', 'week', 'weight', 'well', 'west', 'western', 'what', 'whatever', 'when', 'where', 'whether', 'which', 'while', 'white', 'who', 'whole', 'whom', 'whose', 'why', 'wide', 'wife', 'will', 'win',
-    'wind', 'window', 'wish', 'with', 'within', 'without', 'woman', 'wonder', 'word', 'work', 'worker', 'world', 'worry', 'would', 'write', 'writer', 'wrong', 'yard', 'yeah', 'year', 'yes', 'yet', 'you', 'young', 'your', 'yourself'
+    'wind', 'window', 'wish', 'with', 'within', 'without', 'woman', 'wonder', 'word', 'work', 'worker', 'world', 'worry', 'would', 'write', 'writer', 'wrong', 'yard', 'yeah', 'year', 'yes', 'yet', 'you', 'young', 'your', 'yourself', 'accept yourself', 
+    'act justly', 'aim high', 'alive & well', 'amplify hope', 'baby steps', 'be awesome', 'be colorful', 'be fearless', 'be honest', 'be kind', 'be spontaneous', 'be still', 'be yourself', 'beautiful chaos', 'breathe deeply', 'carpe diem', 'cherish today', 
+    'chill out', 'come back', 'crazy beautiful', 'dance today', 'dream big', 'dream bird', 'enjoy life', 'enjoy today', 'everything counts', 'explore magic', 'fairy dust', 'fear not', 'feeling groovy', 'find balance', 'follow through', 'for real', 
+    'forever free', 'forget this', 'friends forever', 'game on', 'getting there', 'give thanks', 'good job', 'good vibration', 'hakuna matata', 'happy endings', 'have faith', 'have patience', 'hold on', 'how lovely', 'i can', 'i remember', 'i will', 
+    'imperfectly perfect', 'infinite possibilities', 'inhale exhale', 'invite tranquility', 'just because', 'just believe', 'just imagine', 'keep calm', 'keep going', 'keep smiling', 'laugh today', 'laughter heals', 'let go', 'limited edition', 'look up', 
+    'look within', 'loosen up', 'love endures', 'love fearlessly', 'miracles happens', 'move on', 'no boundaries', 'not yet', 'notice things', 'perfectly content', 'perfectly fabulous', 'pretty awesome', 'rise above', 'shift happens', 'shine on', 'sing today', 
+    'slow down', 'start living', 'stay focused', 'stay strong', 'stay true', 'stay tuned', 'take chances', 'thank you', 'think different', 'think first', 'think twice', 'treasure today', 'true love', 'try again', 'unconditional love', 'you can', 'you matter'
 ]
 
 // Constructor class function
@@ -49,7 +55,7 @@ class Hangman {
     }
     // method to calculate game status
     calculateStatus() {
-        const finished = this.word.every((letter) => this.guessedLetters.includes(letter))
+        const finished = this.word.every((letter) => this.guessedLetters.includes(letter) || letter === ' ')
 
         if (this.remainingGuesses === 0) {
             this.status = 'failed'
