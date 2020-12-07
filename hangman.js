@@ -60,7 +60,7 @@ class Hangman {
         }
     }
     // method to display game messages
-    getStatusMessage() {
+    get statusMessage() {
         if (this.status === 'playing') {
             return `Guesses Left: ${this.remainingGuesses}`
         } else if (this.status === 'failed') {
@@ -70,7 +70,7 @@ class Hangman {
         }
     }
     // method to obfuscate the puzzle word letters
-    getPuzzle() {
+    get puzzle() {
         let puzzle = ''
 
         this.word.forEach((letter) => {
