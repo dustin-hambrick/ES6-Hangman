@@ -11,15 +11,15 @@
 
 #puzzle {
     position: absolute;
-    left: 2.7em;
-    top: 5.80em;
-    font-size: 30pt;
+    left: 3.75em;
+    top: 13.5em;
+    font-size: 15pt;
     font-family: monospace;
 }
 
 #guessed {
     position: absolute;
-    left: 7em;
+    left: 5em;
     top: 24em;
     font-size: 12pt;
     font-family: monospace;
@@ -27,7 +27,7 @@
 
 #guesses {
     position: absolute;
-    left: 7em;
+    left: 5em;
     top: 22.05em;
     font-size: 12pt;
     font-family: monospace;
@@ -35,7 +35,7 @@
 
 #message {
     position: absolute;
-    left: 7em;
+    left: 5em;
     top: 20em;
     font-size: 12pt;
     font-family: monospace;
@@ -166,9 +166,9 @@
 
 #gallowsPlatform {
     position: absolute;
-    left: 5.75em;
+    left: 3.8em;
     top: 20em;
-    width: 320px;
+    width: 375px;
     height: 100px;
     background-color: transparent;
     border-style: solid;
